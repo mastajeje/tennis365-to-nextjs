@@ -1,0 +1,72 @@
+@import "../../variables.scss";
+
+.cart {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  .cart-is-empty {
+    text-align: center;
+  }
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 2rem;
+    list-style-type: none;
+    li {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .img-description {
+      display: flex;
+      flex-direction: row;
+      gap: 5rem;
+      .cart__img {
+        width: 40%;
+
+        img {
+          width: 100%;
+        }
+      }
+      .cart__description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        input {
+          width: 40px;
+          // height: 30px;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  .cart_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    width: 100%;
+    .empty-div {
+      width: 50%;
+    }
+    .order-summary {
+      width: 50%;
+      max-width: 50%;
+      background-color: #f4f4f4;
+      border: 1px solid #e4e4e4;
+      .total {
+        padding: 1rem;
+        border-bottom: 1px solid #e4e4e4;
+        span:first-child {
+          width: 50%;
+        }
+        span:last-child {
+          float: right;
+        }
+      }
+      .cart__orderBtn {
+        padding: 1rem;
+        float: right;
+      }
+    }
+  }
+}
