@@ -1,8 +1,8 @@
-import { useContext } from "react";
-import { AuthContext } from "../../Context";
-import { Link, useHistory } from "react-router-dom";
-import "./Header.scss";
-import Navbar from "../Navbar/Navbar";
+// import { useContext } from "react";
+// import { AuthContext } from "../../Context";
+// import { Link, useHistory } from "react-router-dom";
+// import "./Header.scss";
+// import Navbar from "../Navbar/Navbar";
 
 const Header = () => {
   const { authState, setAuthState } = useContext(AuthContext);

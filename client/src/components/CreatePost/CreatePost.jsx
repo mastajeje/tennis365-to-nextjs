@@ -1,12 +1,12 @@
-import "./CreatePost.scss";
-import { Editor } from "@nick4fake/react-draft-wysiwyg";
-import { EditorState, convertToRaw } from "draft-js";
-import "@nick4fake/react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
-import { useContext, useEffect, useState } from "react";
-import Button from "../Button/Button";
-import axios from "axios";
-import { AuthContext } from "../../Context";
-import { useHistory } from "react-router";
+// import "./CreatePost.scss";
+// import { Editor } from "@nick4fake/react-draft-wysiwyg";
+// import { EditorState, convertToRaw } from "draft-js";
+// import "@nick4fake/react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+// import { useContext, useEffect, useState } from "react";
+// import Button from "../Button/Button";
+// import axios from "axios";
+// import { AuthContext } from "../../Context";
+// import { useHistory } from "react-router";
 
 const CreatePost = () => {
   const { authState } = useContext(AuthContext);

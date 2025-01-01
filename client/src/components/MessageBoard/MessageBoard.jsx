@@ -1,7 +1,7 @@
-import "./MessageBoard.scss";
-import Paginator from "react-hooks-paginator";
-import { useEffect, useState } from "react";
-import { useHistory } from "react-router";
+// import "./MessageBoard.scss";
+// import Paginator from "react-hooks-paginator";
+// import { useEffect, useState } from "react";
+// import { useHistory } from "react-router";
 
 const MessageBoard = ({ messageList, historyUrl }) => {
   const pageLimit = 5;

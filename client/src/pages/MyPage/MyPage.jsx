@@ -1,10 +1,10 @@
-import "./MyPage.scss";
+// import "./MyPage.scss";
 
-import { useContext, useEffect, useState } from "react";
-import { Redirect, useParams } from "react-router-dom";
-import DisplayMyPage from "./DisplayMyPage";
-import { useAxios } from "../../hooks/useAxios.js";
-import { AuthContext } from "../../Context";
+// import { useContext, useEffect, useState } from "react";
+// import { Redirect, useParams } from "react-router-dom";
+// import DisplayMyPage from "./DisplayMyPage";
+// import { useAxios } from "../../hooks/useAxios.js";
+// import { AuthContext } from "../../Context";
 
 const MyPage = () => {
   const [orders, setOrders] = useState([]);

@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./InfoBox.scss";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import "./InfoBox.scss";
 
 const InfoBox = ({ faIcon, infoText, additionalInfo }) => {
   return (

@@ -1,4 +1,4 @@
-import {
+// import {
   deleteItem,
   deleteItemImgs,
   editItemImgs,
@@ -12,9 +12,9 @@ import {
   updateItemInfo,
   updateStatus,
 } from "../queries/adminQuery.js";
-import { getAllProducts } from "../queries/productQuery.js";
-import { getAlluserInfo } from "../queries/userQuery.js";
-// import { updateIsAdmin } from "c:/users/jaykim/desktop/projects/localfood/server/queries/adminquery.js";
+// import { getAllProducts } from "../queries/productQuery.js";
+// import { getAlluserInfo } from "../queries/userQuery.js";
+// // import { updateIsAdmin } from "c:/users/jaykim/desktop/projects/localfood/server/queries/adminquery.js";
 
 export const postItem = async (req, res) => {
   const itemInfo = JSON.parse(req.body.itemInfo);

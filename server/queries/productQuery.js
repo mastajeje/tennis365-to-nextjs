@@ -1,4 +1,4 @@
-import { db } from "../db.js";
+// import { db } from "../db.js";
 
 export const getAllProducts = () => {
   return new Promise((resolve, reject) => {

@@ -1,10 +1,10 @@
-import "./QnA.scss";
-import MessageBoard from "../../components/MessageBoard/MessageBoard";
-import { useContext, useEffect, useState } from "react";
-import { useAxios } from "../../hooks/useAxios";
-import Button from "../../components/Button/Button";
-import { AuthContext } from "../../Context";
-import { useHistory } from "react-router";
+// import "./QnA.scss";
+// import MessageBoard from "../../components/MessageBoard/MessageBoard";
+// import { useContext, useEffect, useState } from "react";
+// import { useAxios } from "../../hooks/useAxios";
+// import Button from "../../components/Button/Button";
+// import { AuthContext } from "../../Context";
+// import { useHistory } from "react-router";
 
 const QnA = () => {
   window.reactTimestamp = Date.now();

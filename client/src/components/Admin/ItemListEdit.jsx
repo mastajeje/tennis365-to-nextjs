@@ -1,8 +1,8 @@
-import "./ItemListEdit.scss";
-import { useContext, useEffect, useState } from "react";
-import { ProductContext } from "../../Context";
-import axios from "axios";
-import DeleteItem from "./DeleteItem";
+// import "./ItemListEdit.scss";
+// import { useContext, useEffect, useState } from "react";
+// import { ProductContext } from "../../Context";
+// import axios from "axios";
+// import DeleteItem from "./DeleteItem";
 
 const ItemListEdit = ({ itemId, closeModal, filterItemList }) => {
   const { products, setProducts } = useContext(ProductContext);

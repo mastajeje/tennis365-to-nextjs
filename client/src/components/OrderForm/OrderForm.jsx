@@ -1,22 +1,22 @@
-// import queryString from "query-string";
-import AddressInput from "../AdressInput/AdressInput";
-import Input from "../Input/Input";
-import "./OrderForm.scss";
-import useInputChanges from "../../hooks/useInputChanges";
-import { useEffect } from "react";
-import usePostcode from "../../hooks/usePostcode";
-import InfoBox from "../InfoBox/InfoBox";
-import Button from "../Button/Button";
-import PaymentApi from "../PaymentApi/PaymentApi";
-import {
+// // import queryString from "query-string";
+// import AddressInput from "../AdressInput/AdressInput";
+// import Input from "../Input/Input";
+// import "./OrderForm.scss";
+// import useInputChanges from "../../hooks/useInputChanges";
+// import { useEffect } from "react";
+// import usePostcode from "../../hooks/usePostcode";
+// import InfoBox from "../InfoBox/InfoBox";
+// import Button from "../Button/Button";
+// import PaymentApi from "../PaymentApi/PaymentApi";
+// import {
   faBarcode,
   faCashRegister,
   faEnvelope,
   faMobileAlt,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import { useHistory } from "react-router-dom";
-import axios from "axios";
+// import { useHistory } from "react-router-dom";
+// import axios from "axios";
 
 const OrderForm = ({ orderInfo, orderItems, user, transactionInfo }) => {
   const [fullAddress, setFulladdress, handleComplete] = usePostcode();

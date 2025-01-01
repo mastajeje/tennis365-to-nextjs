@@ -1,6 +1,6 @@
-import { useHistory } from "react-router-dom";
-import ProductImg from "../../components/ProductImg/ProductImg";
-import "./DisplayMyPage.scss";
+// import { useHistory } from "react-router-dom";
+// import ProductImg from "../../components/ProductImg/ProductImg";
+// import "./DisplayMyPage.scss";
 
 const DisplayMyPage = ({ orders, orderItems, user }) => {
   let history = useHistory();

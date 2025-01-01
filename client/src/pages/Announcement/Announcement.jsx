@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import "./Announcement.scss";
-import MessageBoard from "../../components/MessageBoard/MessageBoard";
-import { useAxios } from "../../hooks/useAxios";
+// import { useEffect, useState } from "react";
+// import "./Announcement.scss";
+// import MessageBoard from "../../components/MessageBoard/MessageBoard";
+// import { useAxios } from "../../hooks/useAxios";
 
-import Button from "../../components/Button/Button";
-import { useHistory } from "react-router";
+// import Button from "../../components/Button/Button";
+// import { useHistory } from "react-router";
 const Announcement = () => {
   const [announcementPost, setAnnouncementPost] = useState([]);
 

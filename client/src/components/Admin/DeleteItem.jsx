@@ -1,7 +1,7 @@
-import "./DeleteItem.scss";
-import axios from "axios";
-import { useContext } from "react";
-import { AuthContext } from "../../Context";
+// import "./DeleteItem.scss";
+// import axios from "axios";
+// import { useContext } from "react";
+// import { AuthContext } from "../../Context";
 
 const DeleteItem = ({
   targetId,

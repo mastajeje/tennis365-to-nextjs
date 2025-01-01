@@ -1,5 +1,5 @@
-import { deletePost } from "../queries/adminQuery.js";
-import {
+// import { deletePost } from "../queries/adminQuery.js";
+// import {
   deleteComment,
   insertComment,
   insertPost,

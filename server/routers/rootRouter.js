@@ -1,5 +1,5 @@
-import express from "express";
-import {
+// import express from "express";
+// import {
   deleteItemReview,
   getReview,
   // getUser,
@@ -10,7 +10,7 @@ import {
   viewByBrand,
   viewProduct,
 } from "../controllers/productController.js";
-import {
+// import {
   createComment,
   createPost,
   deletePostReq,
@@ -21,12 +21,12 @@ import {
   getPost,
   getQnA,
 } from "../controllers/rootController.js";
-import {
+// import {
   postJoinController,
   postLoginController,
   getAuth,
 } from "../controllers/userController.js";
-import { publicOnlyMiddleware, validateToken } from "../middlewares.js";
+// import { publicOnlyMiddleware, validateToken } from "../middlewares.js";
 
 const rootRouter = express.Router();
 

@@ -1,6 +1,6 @@
-import { useContext } from "react";
-import DisplayItem from "../../components/DisplayItem/DisplayItem";
-import { ProductContext } from "../../Context";
+// import { useContext } from "react";
+// import DisplayItem from "../../components/DisplayItem/DisplayItem";
+// import { ProductContext } from "../../Context";
 
 const AllProducts = () => {
   const { products } = useContext(ProductContext);

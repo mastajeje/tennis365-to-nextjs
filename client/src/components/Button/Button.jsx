@@ -1,8 +1,8 @@
-import "./Button.scss";
+// import "./Button.scss";
 
-// import { useContext } from "react";
-// import axios from "axios";
-// import { AuthContext } from "../../Context";
+// // import { useContext } from "react";
+// // import axios from "axios";
+// // import { AuthContext } from "../../Context";
 
 const Button = (props) => {
   return (

@@ -1,15 +1,15 @@
-import "./Reviews.scss";
+// import "./Reviews.scss";
 
-import Button from "../../components/Button/Button";
-import Modal from "../../components/Modal/Modal";
-import useModal from "../../hooks/useModal";
-import ReviewForm from "./ReviewForm";
-import { useAxios } from "../../hooks/useAxios";
-import { useParams } from "react-router-dom";
-import { useContext, useEffect, useState } from "react";
-import axios from "axios";
-import { AuthContext } from "../../Context";
-import DeleteItem from "../../components/Admin/DeleteItem";
+// import Button from "../../components/Button/Button";
+// import Modal from "../../components/Modal/Modal";
+// import useModal from "../../hooks/useModal";
+// import ReviewForm from "./ReviewForm";
+// import { useAxios } from "../../hooks/useAxios";
+// import { useParams } from "react-router-dom";
+// import { useContext, useEffect, useState } from "react";
+// import axios from "axios";
+// import { AuthContext } from "../../Context";
+// import DeleteItem from "../../components/Admin/DeleteItem";
 
 const Reviews = () => {
   const { authState } = useContext(AuthContext);

@@ -1,9 +1,9 @@
-import { useHistory, useParams } from "react-router-dom";
-// import queryString from "query-string";
-import "./OrderResult.scss";
-import Button from "../../components/Button/Button";
-import { useEffect, useState } from "react";
-import axios from "axios";
+// import { useHistory, useParams } from "react-router-dom";
+// // import queryString from "query-string";
+// import "./OrderResult.scss";
+// import Button from "../../components/Button/Button";
+// import { useEffect, useState } from "react";
+// import axios from "axios";
 
 const OrderResult = () => {
   let history = useHistory();

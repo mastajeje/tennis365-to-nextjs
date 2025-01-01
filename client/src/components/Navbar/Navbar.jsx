@@ -1,10 +1,10 @@
-import "./Navbar.scss";
-import { useContext, useEffect } from "react";
-import { Link, useHistory } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { AuthContext, SidebarContext } from "../../Context";
-import SearchBar from "../SearchBar/SearchBar";
-import {
+// import "./Navbar.scss";
+// import { useContext, useEffect } from "react";
+// import { Link, useHistory } from "react-router-dom";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { AuthContext, SidebarContext } from "../../Context";
+// import SearchBar from "../SearchBar/SearchBar";
+// import {
   faBars,
   faShoppingCart,
   faUser,

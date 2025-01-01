@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 const PaymentApi = ({ handleInputChange }) => {
   const { IMP } = window;

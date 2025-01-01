@@ -1,8 +1,8 @@
-import { useContext } from "react";
-import { Link, useHistory } from "react-router-dom";
-import { SidebarContext } from "../../Context";
+// import { useContext } from "react";
+// import { Link, useHistory } from "react-router-dom";
+// import { SidebarContext } from "../../Context";
 
-import "./Sidebar.scss";
+// import "./Sidebar.scss";
 
 const Sidebar = () => {
   let history = useHistory();

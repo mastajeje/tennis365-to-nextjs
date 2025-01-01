@@ -1,15 +1,15 @@
-import "./QnAComment.scss";
-import axios from "axios";
-import { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router";
-import DeleteItem from "../../components/Admin/DeleteItem";
-import Button from "../../components/Button/Button";
-import Modal from "../../components/Modal/Modal";
-import { AuthContext } from "../../Context";
-import { useAxios } from "../../hooks/useAxios";
-import useModal from "../../hooks/useModal";
-import ReviewForm from "../ProductDetails/ReviewForm";
-// import Reviews from "../ProductDetails/Reviews";
+// import "./QnAComment.scss";
+// import axios from "axios";
+// import { useContext, useEffect, useState } from "react";
+// import { useParams } from "react-router";
+// import DeleteItem from "../../components/Admin/DeleteItem";
+// import Button from "../../components/Button/Button";
+// import Modal from "../../components/Modal/Modal";
+// import { AuthContext } from "../../Context";
+// import { useAxios } from "../../hooks/useAxios";
+// import useModal from "../../hooks/useModal";
+// import ReviewForm from "../ProductDetails/ReviewForm";
+// // import Reviews from "../ProductDetails/Reviews";
 
 const QnAComment = () => {
   const { authState } = useContext(AuthContext);

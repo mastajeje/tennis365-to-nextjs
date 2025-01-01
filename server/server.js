@@ -1,11 +1,11 @@
-import express from "express";
-import rootRouter from "./routers/rootRouter.js";
-import orderRouter from "./routers/orderRouter.js";
-import cartRouter from "./routers/cartRouter.js";
-import cors from "cors";
-import "dotenv/config";
-import userRouter from "./routers/userRouter.js";
-import adminRouter from "./routers/adminRouter.js";
+// import express from "express";
+// import rootRouter from "./routers/rootRouter.js";
+// import orderRouter from "./routers/orderRouter.js";
+// import cartRouter from "./routers/cartRouter.js";
+// import cors from "cors";
+// import "dotenv/config";
+// import userRouter from "./routers/userRouter.js";
+// import adminRouter from "./routers/adminRouter.js";
 
 const app = express();
 // const PORT = process.env.PORT || 5000;

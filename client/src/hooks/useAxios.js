@@ -1,5 +1,5 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+// import axios from "axios";
+// import { useEffect, useState } from "react";
 
 // axios.defaults.baseURL = "http://localhost:3001";
 axios.defaults.baseURL = "https://tennis365-api.herokuapp.com";

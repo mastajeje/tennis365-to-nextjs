@@ -1,5 +1,5 @@
-import "./ManageOrderModal.scss";
-import { useEffect, useState } from "react";
+// import "./ManageOrderModal.scss";
+// import { useEffect, useState } from "react";
 
 const ManageOrderModal = ({ targetId, allTransaction, transactionItem }) => {
   const [targetTransaction, setTargetTransaction] = useState("");

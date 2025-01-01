@@ -1,21 +1,21 @@
-import "./Join.scss";
-import axios from "axios";
-import Input from "../../components/Input/Input";
-// import Modal from "../../components/Modal/Modal";
-// import DaumPostcode from "react-daum-postcode";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
+// import "./Join.scss";
+// import axios from "axios";
+// import Input from "../../components/Input/Input";
+// // import Modal from "../../components/Modal/Modal";
+// // import DaumPostcode from "react-daum-postcode";
+// // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
   faEnvelope,
   faIdCard,
   faLock,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
-import { useHistory } from "react-router-dom";
-import usePostcode from "../../hooks/usePostcode";
+// import { useState } from "react";
+// import { useHistory } from "react-router-dom";
+// import usePostcode from "../../hooks/usePostcode";
 
-import useInputChanges from "../../hooks/useInputChanges";
-import AddressInput from "../../components/AdressInput/AdressInput";
+// import useInputChanges from "../../hooks/useInputChanges";
+// import AddressInput from "../../components/AdressInput/AdressInput";
 
 const Join = () => {
   const initValues = {

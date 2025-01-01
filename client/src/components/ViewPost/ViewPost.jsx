@@ -1,12 +1,12 @@
-import "./ViewPost.scss";
-import { useHistory, useParams } from "react-router";
-// import { useAxios } from "../../hooks/useAxios";
-import { Editor } from "@nick4fake/react-draft-wysiwyg";
-import { useContext, useEffect, useState } from "react";
-import { convertFromRaw, EditorState } from "draft-js";
-import { AuthContext } from "../../Context";
-import axios from "axios";
-import QnAComment from "../../pages/QnA/QnAComment";
+// import "./ViewPost.scss";
+// import { useHistory, useParams } from "react-router";
+// // import { useAxios } from "../../hooks/useAxios";
+// import { Editor } from "@nick4fake/react-draft-wysiwyg";
+// import { useContext, useEffect, useState } from "react";
+// import { convertFromRaw, EditorState } from "draft-js";
+// import { AuthContext } from "../../Context";
+// import axios from "axios";
+// import QnAComment from "../../pages/QnA/QnAComment";
 
 const ViewPost = () => {
   const [post, setPost] = useState({});

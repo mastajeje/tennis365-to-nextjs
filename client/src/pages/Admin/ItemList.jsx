@@ -1,6 +1,6 @@
-import ItemListDisplay from "../../components/Admin/ItemListDisplay";
+// import ItemListDisplay from "../../components/Admin/ItemListDisplay";
 
-import "./ItemList.scss";
+// import "./ItemList.scss";
 const ItemList = () => {
   return (
     <section className="item-list">

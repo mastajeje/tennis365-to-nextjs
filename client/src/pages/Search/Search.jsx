@@ -1,5 +1,5 @@
-import { useLocation } from "react-router-dom";
-import DisplayItem from "../../components/DisplayItem/DisplayItem";
+// import { useLocation } from "react-router-dom";
+// import DisplayItem from "../../components/DisplayItem/DisplayItem";
 
 const Search = () => {
   const location = useLocation();

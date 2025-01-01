@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import { useContext } from "react";
-import { ProductContext } from "../../Context";
-import { useParams, useRouteMatch } from "react-router-dom";
-import DisplayItem from "../../components/DisplayItem/DisplayItem";
+// import { useEffect, useState } from "react";
+// import { useContext } from "react";
+// import { ProductContext } from "../../Context";
+// import { useParams, useRouteMatch } from "react-router-dom";
+// import DisplayItem from "../../components/DisplayItem/DisplayItem";
 
 const ByBrand = () => {
   const { products } = useContext(ProductContext);

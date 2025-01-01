@@ -1,19 +1,19 @@
-import { db } from "../db.js";
-import {
+// import { db } from "../db.js";
+// import {
   insertTransaction,
   selectOrderItemQuantity,
   selectTransaction,
   updateStock,
 } from "../queries/orderQuery.js";
-import {
+// import {
   emptyCartItems,
   getCartId,
   getOrderInfo,
   getOrderItems,
   insertOrderItem,
 } from "../queries/productQuery.js";
-import { getUserInfo } from "../queries/userQuery.js";
-import axios from "axios";
+// import { getUserInfo } from "../queries/userQuery.js";
+// import axios from "axios";
 
 export const postOrder = async (req, res) => {
   const { user_id, grandTotal, orderItems } = req.body;

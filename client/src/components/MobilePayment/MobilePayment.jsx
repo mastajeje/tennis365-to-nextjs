@@ -1,9 +1,9 @@
-import { useHistory, useLocation, useParams } from "react-router";
-import queryString from "query-string";
+// import { useHistory, useLocation, useParams } from "react-router";
+// import queryString from "query-string";
 
-import { useEffect } from "react";
-import { useAxios } from "../../hooks/useAxios";
-import axios from "axios";
+// import { useEffect } from "react";
+// import { useAxios } from "../../hooks/useAxios";
+// import axios from "axios";
 
 const MobilePayment = () => {
   let history = useHistory();

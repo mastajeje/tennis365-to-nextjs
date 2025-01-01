@@ -1,5 +1,5 @@
-import Button from "../../components/Button/Button";
-import "./ReviewForm.scss";
+// import Button from "../../components/Button/Button";
+// import "./ReviewForm.scss";
 
 const ReviewForm = ({ postReview, handleReview }) => {
   return (

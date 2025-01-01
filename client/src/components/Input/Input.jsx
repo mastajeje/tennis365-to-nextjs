@@ -1,5 +1,5 @@
-import "./Input.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import "./Input.scss";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Input = ({
   inputIcon,

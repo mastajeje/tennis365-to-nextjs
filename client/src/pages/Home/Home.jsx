@@ -1,24 +1,24 @@
-import "./Home.scss";
-// import { useContext } from "react";
-import { useMediaQuery } from "react-responsive";
-// import { ProductContext } from "../../Context";
+// import "./Home.scss";
+// // import { useContext } from "react";
+// import { useMediaQuery } from "react-responsive";
+// // import { ProductContext } from "../../Context";
 
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import { useHistory } from "react-router";
+// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+// import { Carousel } from "react-responsive-carousel";
+// import { useHistory } from "react-router";
 
 const Home = () => {
-  let history = useHistory();
+//   let history = useHistory();
   // const { products } = useContext(ProductContext);
-  const isMobile = useMediaQuery({ query: "(max-width:650px)" });
+//   const isMobile = useMediaQuery({ query: "(max-width:650px)" });
 
-  const handleBrandClick = (brandId) => {
-    history.push(`/by-brand/${brandId}`);
-  };
+//   const handleBrandClick = (brandId) => {
+//     history.push(`/by-brand/${brandId}`);
+//   };
 
   return (
     <main className="home" style={{ width: "100%" }}>
-      {!isMobile ? (
+      {/* {!isMobile ? (
         <Carousel
           infiniteLoop={true}
           showThumbs={false}
@@ -51,7 +51,7 @@ const Home = () => {
             <img src="/images/carousel-head.jpg" alt="" />
           </div>
         </div>
-      )}
+      )} */}
       {/* <DisplayItem items={products} /> */}
       <ul className="brand-list">
         <div className="brand-list-row">

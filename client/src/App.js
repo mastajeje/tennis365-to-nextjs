@@ -1,36 +1,39 @@
-import "./App.scss";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { AuthContext, ProductContext, SidebarContext } from "./Context";
-import axios from "axios";
+
+// import "./App.scss";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import { useState, useEffect } from "react";
+// import { AuthContext, ProductContext, SidebarContext } from "./Context";
+// import axios from "axios";
+
+import { useEffect, useState } from "react";
 
 import Home from "./pages/Home/Home";
-import ProductDetails from "./pages/ProductDetails/ProductDetails";
-import Search from "./pages/Search/Search";
-import Footer from "./components/Footer/Footer.jsx";
-import Login from "./pages/Login/Login";
-import Join from "./pages/Join/Join.jsx";
-import Cart from "./pages/Cart/Cart";
-import Order from "./pages/Order/Order";
-import MyPage from "./pages/MyPage/MyPage.jsx";
-import PrivateRoute from "./AccessControl/PrivateOnlyRoute.jsx";
-import NonMembersOnlyRoute from "./AccessControl/NonMembersOnlyRoute.jsx";
-import AdminOnlyRoute from "./AccessControl/AdminOnlyRoute";
-import PostItem from "./pages/Admin/PostItem";
-import ItemList from "./pages/Admin/ItemList";
-import UserList from "./pages/Admin/UserList";
-import ManageOrder from "./pages/Admin/ManageOrder";
-import Sidebar from "./components/Sidebar/Sidebar";
-import Header from "./components/Header/Header";
-import ByBrand from "./pages/ByBrand/ByBrand";
-import OrderResult from "./pages/Order/OrderResult";
-import Announcement from "./pages/Announcement/Announcement";
-import ViewPost from "./components/ViewPost/ViewPost";
-import QnA from "./pages/QnA/QnA";
-import CreatePost from "./components/CreatePost/CreatePost";
-import EditPost from "./components/EditPost/EditPost";
-import AllProducts from "./pages/AllProducts/AllProducts";
-import MobilePayment from "./components/MobilePayment/MobilePayment";
+// import ProductDetails from "./pages/ProductDetails/ProductDetails";
+// import Search from "./pages/Search/Search";
+// import Footer from "./components/Footer/Footer.jsx";
+// import Login from "./pages/Login/Login";
+// import Join from "./pages/Join/Join.jsx";
+// import Cart from "./pages/Cart/Cart";
+// import Order from "./pages/Order/Order";
+// import MyPage from "./pages/MyPage/MyPage.jsx";
+// import PrivateRoute from "./AccessControl/PrivateOnlyRoute.jsx";
+// import NonMembersOnlyRoute from "./AccessControl/NonMembersOnlyRoute.jsx";
+// import AdminOnlyRoute from "./AccessControl/AdminOnlyRoute";
+// import PostItem from "./pages/Admin/PostItem";
+// import ItemList from "./pages/Admin/ItemList";
+// import UserList from "./pages/Admin/UserList";
+// import ManageOrder from "./pages/Admin/ManageOrder";
+// import Sidebar from "./components/Sidebar/Sidebar";
+// import Header from "./components/Header/Header";
+// import ByBrand from "./pages/ByBrand/ByBrand";
+// import OrderResult from "./pages/Order/OrderResult";
+// import Announcement from "./pages/Announcement/Announcement";
+// import ViewPost from "./components/ViewPost/ViewPost";
+// import QnA from "./pages/QnA/QnA";
+// import CreatePost from "./components/CreatePost/CreatePost";
+// import EditPost from "./components/EditPost/EditPost";
+// import AllProducts from "./pages/AllProducts/AllProducts";
+// import MobilePayment from "./components/MobilePayment/MobilePayment";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -42,38 +45,40 @@ function App() {
     status: false,
   });
   // http://localhost:3001/
-  const getAuth = axios.get("https://tennis365-api.herokuapp.com/auth", {
-    headers: {
-      accessToken: localStorage.getItem("accessToken"),
-    },
-  });
+//   const getAuth = axios.get("https://tennis365-api.herokuapp.com/auth", {
+//     headers: {
+//       accessToken: localStorage.getItem("accessToken"),
+//     },
+//   });
 
-  useEffect(() => {
-    axios
-      .all([getAuth, axios.get("https://tennis365-api.herokuapp.com/")])
-      .then((res) => {
-        if (res[0].data.errorMessage) {
-          setAuthState({ ...authState, status: false });
-        } else {
-          setAuthState({
-            username: res[0].data.username,
-            id: res[0].data.id,
-            isAdmin: res[0].data.isAdmin,
-            status: true,
-          });
-          // console.log(authState.isAdmin);
-        }
+//   useEffect(() => {
+//     axios
+//       .all([getAuth, axios.get("https://tennis365-api.herokuapp.com/")])
+//       .then((res) => {
+//         if (res[0].data.errorMessage) {
+//           setAuthState({ ...authState, status: false });
+//         } else {
+//           setAuthState({
+//             username: res[0].data.username,
+//             id: res[0].data.id,
+//             isAdmin: res[0].data.isAdmin,
+//             status: true,
+//           });
+//           // console.log(authState.isAdmin);
+//         }
 
-        setProducts(res[1].data);
-      });
-    // eslint-disable-next-line
-  }, []);
+//         setProducts(res[1].data);
+//       });
+//     // eslint-disable-next-line
+//   }, []);
 
   return (
     <div className="App">
-      <AuthContext.Provider value={{ authState, setAuthState }}>
-        <ProductContext.Provider value={{ products, setProducts }}>
-          <Router>
+        <Header/>
+        <Home/>
+      {/* <AuthContext.Provider value={{ authState, setAuthState }}> */}
+        {/* <ProductContext.Provider value={{ products, setProducts }}> */}
+          {/* <Router>
             <SidebarContext.Provider value={{ isShowing, setIsShowing }}>
               <Header />
               <Sidebar />
@@ -141,9 +146,9 @@ function App() {
               </Switch>
             </div>
             <Footer />
-          </Router>
-        </ProductContext.Provider>
-      </AuthContext.Provider>
+          </Router> */}
+        {/* </ProductContext.Provider> */}
+      {/* </AuthContext.Provider> */}
     </div>
   );
 }

@@ -1,6 +1,6 @@
-import "./DisplayCart.scss";
+// import "./DisplayCart.scss";
 
-import ProductImg from "../ProductImg/ProductImg";
+// import ProductImg from "../ProductImg/ProductImg";
 
 const DisplayCart = ({ cartItems, handleQuantity, handleDelete }) => {
   const getBrandName = (BrnadNumber) => {

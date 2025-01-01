@@ -1,4 +1,4 @@
-import { Redirect, Route } from "react-router-dom";
+// import { Redirect, Route } from "react-router-dom";
 
 const PrivateRoute = ({ component: Component, ...restOfProps }) => {
   const isAuthenticated = localStorage.getItem("accessToken");

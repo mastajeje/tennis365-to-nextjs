@@ -1,11 +1,11 @@
-import "./ProductDetails.scss";
-import axios from "axios";
-import { useParams } from "react-router-dom";
-import { useState, useEffect, useContext } from "react";
-import { AuthContext } from "../../Context";
-import { useAxios } from "../../hooks/useAxios.js";
-import DisplayProductDetails from "./DisplayProductDetails";
-import Reviews from "./Reviews";
+// import "./ProductDetails.scss";
+// import axios from "axios";
+// import { useParams } from "react-router-dom";
+// import { useState, useEffect, useContext } from "react";
+// import { AuthContext } from "../../Context";
+// import { useAxios } from "../../hooks/useAxios.js";
+// import DisplayProductDetails from "./DisplayProductDetails";
+// import Reviews from "./Reviews";
 
 const ProductDetails = () => {
   const [product, setProduct] = useState({});

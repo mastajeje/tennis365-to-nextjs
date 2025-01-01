@@ -1,4 +1,4 @@
-import "./PostItemForm.scss";
+// import "./PostItemForm.scss";
 
 const PostItemForm = ({
   handleInputChange,
