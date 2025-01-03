@@ -1,7 +1,12 @@
+// import '../index.css'
 
-import '../index.css'
+import Header from "./components/header";
 
-export default function RootLayout({children}){
+export default function RootLayout({
+    children,
+  }: Readonly<{
+    children: React.ReactNode;
+  }>) {
     return (
 <html lang="en">
   <head>
@@ -36,6 +41,7 @@ export default function RootLayout({children}){
     ></script> */}
   </head>
   <body>
+    <Header/>
     <div id="root">{children}</div>
 
   </body>

@@ -74,8 +74,8 @@ function App() {
 
   return (
     <div className="App">
-        <Header/>
-        <Home/>
+        {/* <Header/> */}
+        {/* <Home/> */}
       {/* <AuthContext.Provider value={{ authState, setAuthState }}> */}
         {/* <ProductContext.Provider value={{ products, setProducts }}> */}
           {/* <Router>
