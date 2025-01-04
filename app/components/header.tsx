@@ -1,7 +1,7 @@
 // import { useContext } from "react";
 // import { AuthContext } from "../../Context";
 // import { Link, useHistory } from "react-router-dom";
-// import "./Header.scss";
+import "./styles.scss";
 // import Navbar from "../Navbar/Navbar";
 
 import Link from "next/link";
@@ -26,7 +26,7 @@ const Header = () => {
           <ul>
             <li className="title">
               <Link href="/">
-                <img src={"/images/nav-logo.jpg"} alt="logo" />
+                <img src={"/nav-logo.jpg"} alt="logo" />
                 <span>Tennis 365</span>
               </Link>
             </li>
