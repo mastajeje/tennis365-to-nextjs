@@ -1,6 +1,7 @@
 // import { useContext } from "react";
 // import { AuthContext } from "../../Context";
 // import { Link, useHistory } from "react-router-dom";
+import NavBar from "./NavBar";
 import "./styles.scss";
 // import Navbar from "../Navbar/Navbar";
 
@@ -129,7 +130,7 @@ const Header = () => {
               </Link>
             </div>
           </div>
-        {/* <Navbar /> */}
+        <NavBar />
       </header>
     );
   };

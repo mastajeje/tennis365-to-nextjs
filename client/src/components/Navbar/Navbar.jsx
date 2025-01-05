@@ -4,7 +4,7 @@
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { AuthContext, SidebarContext } from "../../Context";
 // import SearchBar from "../SearchBar/SearchBar";
-// import {
+import {
   faBars,
   faShoppingCart,
   faUser,
