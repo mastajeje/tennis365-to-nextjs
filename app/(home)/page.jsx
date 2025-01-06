@@ -1,5 +1,8 @@
 'use client'
+import { Carousel } from "react-responsive-carousel";
 import "./styles.scss"
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
 // import { ClientOnly } from "./client"
 
 // export function generateStaticParams() {
@@ -12,9 +15,6 @@ import "./styles.scss"
 // }
 
 // import { Metadata } from "next";
-
-import { Carousel } from "react-responsive-carousel";
-
 
 export const Metadata = {
     title: "Home"

@@ -4,8 +4,25 @@
     .carousel-root {
       width: 80%;
       margin-bottom: 2rem;
+      margin: 0 auto;
       .carousel-slider {
         margin: 0 auto;
+      }
+
+      .slider-wrapper {
+        .slider {
+          div {
+            margin: 0 auto;
+            img {
+              height: 600px;
+            }
+          }
+        }
+        .thumb {
+          img {
+            height: 120px;
+          }
+        }
       }
     }
   
