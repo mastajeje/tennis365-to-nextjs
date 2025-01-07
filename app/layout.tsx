@@ -1,17 +1,19 @@
-import './global.scss'
+import './global.scss';
+import Footer from './components/Footer/Footer';
 
-import Header from "./components/Header";
+import Header from './components/Header/Header';
+import NavBar from './components/Navbar/NavBar';
 
 export default function RootLayout({
-    children,
-  }: Readonly<{
-    children: React.ReactNode;
-  }>) {
-    return (
-<html lang="en">
-  <head>
-    <meta charSet="utf-8" />
-    {/* <link rel="icon" href="%PUBLIC_URL%/tap-logo.png" />
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        {/* <link rel="icon" href="%PUBLIC_URL%/tap-logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,8 +30,8 @@ export default function RootLayout({
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> */}
 
-    <title>Tennis365</title>
-    {/* <!-- jQuery -->
+        <title>Tennis365</title>
+        {/* <!-- jQuery -->
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -39,13 +41,16 @@ export default function RootLayout({
       type="text/javascript"
       src="https://cdn.iamport.kr/js/iamport.payment-1.1.8.js"
     ></script> */}
-  </head>
-  <body>
-    <Header/>
-    <div id="root">{children}</div>
+      </head>
+      <body className="flex-container">
+        <Header />
 
-  </body>
-</html>
-
-    )
+        <div id="root">
+          <NavBar />
+          {children}
+        </div>
+        <Footer />
+      </body>
+    </html>
+  );
 }

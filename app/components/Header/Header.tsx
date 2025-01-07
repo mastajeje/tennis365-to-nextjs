@@ -1,8 +1,8 @@
 // import { useContext } from "react";
 // import { AuthContext } from "../../Context";
 // import { Link, useHistory } from "react-router-dom";
-import NavBar from "./NavBar";
-import "./styles.scss";
+import NavBar from "../Navbar/NavBar";
+import styles from "./Header.module.scss";
 // import Navbar from "../Navbar/Navbar";
 
 import Link from "next/link";
@@ -22,10 +22,10 @@ const Header = () => {
     // };
   
     return (
-      <header className="main-header">
-        <div className="top-nav">
+      <header className={styles["main-header"]}>
+        <div className={styles["top-nav"]}>
           <ul>
-            <li className="title">
+            <li className={styles["title"]}>
               <Link href="/">
                 <img src={"/nav-logo.jpg"} alt="logo" />
                 <span>Tennis 365</span>
@@ -108,29 +108,29 @@ const Header = () => {
             </div>
           </div>
         ) : null} */}
-             <div className="admin-menu">
+             <div className={styles["admin-menu"]}>
             <div>
               <Link href="/admin/post-item">
-                <span className="header-link">상품등록</span>
+                <span className={styles["header-link"]}>상품등록</span>
               </Link>
             </div>
             <div>
               <Link href="/admin/item-list">
-                <span className="header-link">상품목록</span>
+                <span className={styles["header-link"]}>상품목록</span>
               </Link>
             </div>
             <div>
               <Link href="/admin/user-list">
-                <span className="header-link">유저목록</span>
+                <span className={styles["header-link"]}>유저목록</span>
               </Link>
             </div>
             <div>
               <Link href="/admin/manage-order">
-                <span className="header-link">주문관리</span>
+                <span className={styles["header-link"]}>주문관리</span>
               </Link>
             </div>
           </div>
-        <NavBar />
+       
       </header>
     );
   };

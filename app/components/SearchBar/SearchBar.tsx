@@ -3,7 +3,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-
+import styles from "./SearchBar.module.scss"
 export default function SearchBar(){
     const [keyword, setKeyword] = useState("");
     // const [result, setResult] = useState([]);
@@ -31,8 +31,8 @@ export default function SearchBar(){
     // };
 
     return (
-        <li className="search-box">
-        <form className="searchBar" onSubmit={()=>{}}>
+        <li className={styles["search-box"]}>
+        <form className={styles["searchBar"]} onSubmit={()=>{}}>
           <input
             type="text"
             name="keyword"
