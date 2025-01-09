@@ -1,4 +1,4 @@
-import styles from "./all-products.module.scss"
+import styles from "./products.module.scss"
 import ProductDisplay from "../components/ProductDisplay/ProductDisplay";
 
 const dummyProducts = [
@@ -33,7 +33,7 @@ export default function page({products = dummyProducts}) {
     return (
       <main style={{ margin: "0 auto" }}>
         <ul id={styles['display-product']}>
-        {products.map((product) => <ProductDisplay product={product} /> )}
+        {products.map((product) => <ProductDisplay key={product.id} product={product} /> )}
         </ul>
       </main>
     );
