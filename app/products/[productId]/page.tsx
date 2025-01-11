@@ -2,7 +2,7 @@
 import { Carousel } from 'react-responsive-carousel';
 import styles from '../products.module.scss'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 
 const product ={
     product_name: 'Pure Aero',
@@ -86,13 +86,9 @@ export default function productDetailsPage({ params}){
               </tr>
             </tbody>
           </table>
-          {/* <Button handleBtnClick={addCart} text={"장바구니 담기"} /> */}
         </div>
       </div>
       </section>
-    // <div>
-    //     <h1>Product Details</h1>
-    //     <p>Product ID: {productId}</p>
-    // </div>
+
     )
     }
