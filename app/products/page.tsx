@@ -1,5 +1,5 @@
 import styles from "./products.module.scss"
-import ProductDisplay from "../components/ProductDisplay/ProductDisplay";
+import ProductDisplay from "../../components/ProductDisplay/ProductDisplay";
 
 const dummyProducts = [
     {
