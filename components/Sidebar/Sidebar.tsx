@@ -11,15 +11,36 @@ export default function Sidebar({isShowing}: {isShowing: boolean}) {
     //   history.push(`/by-brand/${brandId}`);
   };
   return (
-    <div className={isShowing === false ? `${styles['hide-sidebar']} ${styles['sidebar']}` : `${styles['sidebar']}`}>
+    <div
+      className={
+        isShowing === false
+          ? `${styles['hide-sidebar']} ${styles['sidebar']}`
+          : `${styles['sidebar']}`
+      }
+    >
       <ul>
-        <li onClick={() => {}}>전체보기</li>
-        <li onClick={() => handleBrandClick(1)}>Babolat</li>
-        <li onClick={() => handleBrandClick(2)}>Wilson</li>
-        <li onClick={() => handleBrandClick(3)}>Head</li>
-        <li onClick={() => handleBrandClick(4)}>Yonex</li>
-        <li onClick={() => handleBrandClick(5)}>Dunlop</li>
-        <li onClick={() => handleBrandClick(6)}>Tecnifibre</li>
+        <li>
+          <Link href="/products">전체상품</Link>
+        </li>
+
+        <li>
+          <Link href="/products/by-brand/babolat">Babolat</Link>
+        </li>
+        <li>
+          <Link href="/products/by-brand/wilson">Wilson</Link>
+        </li>
+        <li>
+          <Link href="/products/by-brand/head">Head</Link>
+        </li>
+        <li>
+          <Link href="/products/by-brand/yonex">Yonex</Link>
+        </li>
+        <li>
+          <Link href="/products/by-brand/dunlop">Dunlop</Link>
+        </li>
+        <li>
+          <Link href="/products/by-brand/tecnifibre">TecniFibre</Link>
+        </li>
         <li>
           <Link href="/board/announcement">
             <small>공지사항</small>
