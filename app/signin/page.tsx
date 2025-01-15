@@ -2,7 +2,7 @@
 import styles from './signin.module.scss';
 import { useState } from 'react';
 import Input from '../../components/Input/Input';
-import useInputChanges from '../../libs/useInputChange';
+import useInputChanges from '../../lib/useInputChange';
 import { faIdCard, faLock } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../components/Button/Button';
 

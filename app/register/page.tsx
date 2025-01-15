@@ -3,7 +3,7 @@ import styles from './register.module.scss'
 import { faEnvelope, faIdCard, faLock, faUser } from "@fortawesome/free-solid-svg-icons";
 import Input from "../../components/Input/Input";
 import { useState } from "react";
-import useInputChanges from "../../libs/useInputChange";
+import useInputChanges from "../../lib/useInputChange";
 
 const initValues = {
     name: "",
