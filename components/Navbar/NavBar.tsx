@@ -1,47 +1,55 @@
-'use client'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+'use client';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 // import SearchBar from "../SearchBar/SearchBar";
 import {
-    faBars,
-    faShoppingCart,
-    faUser,
-  } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
-import SearchBar from "../SearchBar/SearchBar";
-import { useState } from "react";
-import Sidebar from "../Sidebar/Sidebar";
-import styles from "./Navbar.module.scss"
-export default function NavBar(){
-    const [isSideBarShowing, setIsSideBarShowing] = useState(false);
+  faBars,
+  faShoppingCart,
+  faUser,
+} from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
+import SearchBar from '../SearchBar/SearchBar';
+import {useState} from 'react';
+import Sidebar from '../Sidebar/Sidebar';
+import styles from './Navbar.module.scss';
+import { useRouter } from 'next/navigation';
 
-    const toggleSideBar = () => {
-        setIsSideBarShowing(!isSideBarShowing);
-    }
-    return (
-        <>
-        <div className={styles["nav-container"]}>
-        <nav className={styles["bottom-nav"]}>
-          <ul className={styles["bottom-nav__ul"]}>
-            <li className={styles["fa-icon fa-bars"]}>
+const tempUserId = 1;
+
+export default function NavBar() {
+  const [isSideBarShowing, setIsSideBarShowing] = useState(false);
+  const router = useRouter();
+
+  const toMyPage = () => {
+    router.push(`/user/${tempUserId}`);
+  };
+  const toggleSideBar = () => {
+    setIsSideBarShowing(!isSideBarShowing);
+  };
+  return (
+    <>
+      <div className={styles['nav-container']}>
+        <nav className={styles['bottom-nav']}>
+          <ul className={styles['bottom-nav__ul']}>
+            <li className={styles['fa-icon fa-bars']}>
               <FontAwesomeIcon icon={faBars} onClick={toggleSideBar} />
             </li>
             <SearchBar />
-            { (
+            {
               <>
-                <li className={styles["fa-cart"]}>
+                <li className={styles['fa-cart']}>
                   <Link href="/cart">
-                    <div className={styles["fa-icon"]}>
+                    <div className={styles['fa-icon']}>
                       <FontAwesomeIcon icon={faShoppingCart} />
                     </div>
                   </Link>
                 </li>
                 <li>
-                  <div onClick={()=>{}} className={styles["user-icon"]}>
+                  <div onClick={toMyPage} className={styles['user-icon']}>
                     <FontAwesomeIcon icon={faUser} />
                   </div>
                 </li>
               </>
-            )}
+            }
             {/* {!authState.isAdmin && (
               <>
                 <li className="fa-cart">
@@ -61,7 +69,7 @@ export default function NavBar(){
           </ul>
         </nav>
       </div>
-        <Sidebar isShowing={isSideBarShowing}/>
-        </>
-    )
-    }
+      <Sidebar isShowing={isSideBarShowing} />
+    </>
+  );
+}
