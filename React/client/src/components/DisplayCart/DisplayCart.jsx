@@ -2,14 +2,16 @@
 
 // import ProductImg from "../ProductImg/ProductImg";
 
+
+
 const DisplayCart = ({ cartItems, handleQuantity, handleDelete }) => {
-  const getBrandName = (BrnadNumber) => {
-    if (BrnadNumber === "1") return "바볼랏";
-    if (BrnadNumber === "2") return "윌슨";
-    if (BrnadNumber === "3") return "헤드";
-    if (BrnadNumber === "4") return "요넥스";
-    if (BrnadNumber === "5") return "던롭";
-    if (BrnadNumber === "6") return "테크니파이버";
+  const getBrandName = (brandNumber) => {
+    if (brandNumber === "1") return "바볼랏";
+    if (brandNumber === "2") return "윌슨";
+    if (brandNumber === "3") return "헤드";
+    if (brandNumber === "4") return "요넥스";
+    if (brandNumber === "5") return "던롭";
+    if (brandNumber === "6") return "테크니파이버";
   };
 
   const getTotal = (quantity, unitPrice) => {
