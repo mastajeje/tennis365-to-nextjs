@@ -7,8 +7,17 @@ export const getShippingStatus = (orderStatus: number) => {
     if (orderStatus === 5) return "취소요청";
   };
 
-  export const getPaymentMethod = (paymentMethod) => {
+  export const getPaymentMethod = (paymentMethod : string) => {
     if (paymentMethod === "card") return "신용카드";
     if (paymentMethod === "samsung") return "삼성페이";
     if (paymentMethod === "kakaopay") return "카카오페이";
+  };
+
+  export const getBrandName = (brandId:string) => {
+    if (brandId === "1") return "바볼랏";
+    if (brandId === "2") return "윌슨";
+    if (brandId === "3") return "헤드";
+    if (brandId === "4") return "요넥스";
+    if (brandId === "5") return "던롭";
+    if (brandId === "6") return "테크니파이버";
   };

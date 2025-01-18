@@ -1,13 +1,8 @@
+import { getBrandName } from "../../../lib/utils";
+
 export default function CartDisplay({ cartItems, handleQuantity, handleDelete }){
-    
-    const getBrandName = (brandNumber) => {
-        if (brandNumber === "1") return "바볼랏";
-        if (brandNumber === "2") return "윌슨";
-        if (brandNumber === "3") return "헤드";
-        if (brandNumber === "4") return "요넥스";
-        if (brandNumber === "5") return "던롭";
-        if (brandNumber === "6") return "테크니파이버";
-      };
+
+
     
       const getTotal = (quantity, unitPrice) => {
         return quantity * unitPrice;
