@@ -9,14 +9,16 @@
 // import Button from "../Button/Button";
 // import PaymentApi from "../PaymentApi/PaymentApi";
 // import {
-  faBarcode,
-  faCashRegister,
-  faEnvelope,
-  faMobileAlt,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+//   faBarcode,
+//   faCashRegister,
+//   faEnvelope,
+//   faMobileAlt,
+//   faUser,
+// } from "@fortawesome/free-solid-svg-icons";
 // import { useHistory } from "react-router-dom";
 // import axios from "axios";
+
+
 
 const OrderForm = ({ orderInfo, orderItems, user, transactionInfo }) => {
   const [fullAddress, setFulladdress, handleComplete] = usePostcode();
