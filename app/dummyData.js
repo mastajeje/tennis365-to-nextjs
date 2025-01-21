@@ -43,35 +43,35 @@ export const dummyOrders = [
   {
     merchant_uid: '20210809-000002',
     status: 1,
-    orderedAt: '2021-08-09',
+    orderedAt: '2021-08-10',
     pay_method: 'samsung',
     grandTotal: 100000,
   },
   {
     merchant_uid: '20210809-000003',
     status: 2,
-    orderedAt: '2021-08-09',
+    orderedAt: '2021-08-11',
     pay_method: 'kakaopay',
     grandTotal: 150000,
   },
   {
     merchant_uid: '20210809-000004',
     status: 3,
-    orderedAt: '2021-08-09',
+    orderedAt: '2021-08-12',
     pay_method: 'card',
     grandTotal: 200000,
   },
   {
     merchant_uid: '20210809-000005',
     status: 4,
-    orderedAt: '2021-08-09',
+    orderedAt: '2021-08-13',
     pay_method: 'samsung',
     grandTotal: 250000,
   },
   {
     merchant_uid: '20210809-000006',
     status: 5,
-    orderedAt: '2021-08-09',
+    orderedAt: '2021-08-14',
     pay_method: 'kakaopay',
     grandTotal: 300000,
   },
@@ -120,3 +120,13 @@ export const dummyOrderItems = [
     quantity: 1,
   },
 ];
+
+export const dummyOrderInfo = {
+    grandTotal: 10000,
+
+}
+
+export const dummyTransactionInfo = {
+    user_id: 1,
+    order_id: 1,
+}
