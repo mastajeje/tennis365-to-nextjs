@@ -1,5 +1,8 @@
 import { getBrandName } from "../../../lib/utils";
 
+//create dummy cartItems
+
+
 export default function CartDisplay({ cartItems, handleQuantity, handleDelete }){
 
 
