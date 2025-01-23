@@ -1,16 +1,19 @@
 'use client'
+import styles from "./Order.module.scss"
 import { faBarcode, faCashRegister, faEnvelope, faMobileAlt, faUser } from "@fortawesome/free-solid-svg-icons";
 import Input from "../../../../components/Input/Input";
 import useInputChanges from "../../../../lib/useInputChange";
+import InfoBox from "./InfoBox";
+import Button from "../../../../components/Button/Button";
 
 
 export default function Order({ orderInfo, orderItems, user, transactionInfo }){
     const { values, handleInputChange, setValues } = useInputChanges({});
 
     return (
-        <form className="order-form" onSubmit={()=>{}}>
-        <div className="customer">
-          <h2 className="customer__h2">받는사람정보</h2>
+        <form className={styles["order-form"]} onSubmit={()=>{}}>
+        <div >
+          <h2 >받는사람정보</h2>
           <Input
             inputIcon={faUser}
             inputName={"name"}
@@ -43,10 +46,10 @@ export default function Order({ orderInfo, orderItems, user, transactionInfo }){
             fullAddress={fullAddress}
           /> */}
         </div>
-        <div className="order-checkout">
-          <div className="order">
+        <div className={styles["order-checkout"]}>
+          <div className={styles["order"]}>
             <h2>상품정보</h2>
-            {/* {orderItems.map((item) => {
+            {orderItems.map((item) => {
               return (
                 <InfoBox
                   key={item.id}
@@ -56,17 +59,17 @@ export default function Order({ orderInfo, orderItems, user, transactionInfo }){
                   additionalInfo={`${item.quantity} 개`}
                 />
               );
-            })} */}
+            })}
           </div>
-          {/* <div className="checkout">
+          <div className="checkout">
             <h2>결제정보</h2>
             <InfoBox
               faIcon={faCashRegister}
               infoText={`결제금액 ${orderInfo.grandTotal}원`}
             />
-            <PaymentApi handleInputChange={handleInputChange} />
+            {/* <PaymentApi handleInputChange={handleInputChange} /> */}
           </div>
-          <Button text={"결제하기"} /> */}
+          <Button text={"결제하기"} />
         </div>
       </form>
     )

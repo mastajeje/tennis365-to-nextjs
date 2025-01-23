@@ -1,9 +1,10 @@
+import styles from "../../user.module.scss"
 import { dummyOrderInfo, dummyOrderItems, dummyTransactionInfo, dummyUser } from "../../../dummyData";
 import Order from "../../_PageSections/Order/Order";
 
 export default function page(){
     return (
-        <section className="order-page" style={{ margin: "0 auto" }}>
+        <section className={styles["order-page"]} style={{ margin: "0 auto" }}>
         {/* {authorized ? ( */}
           <Order
             // initValues={initValues}

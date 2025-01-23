@@ -1,4 +1,4 @@
-import styles from "../mypage.module.scss"
+import styles from "../user.module.scss"
 import { dummyOrderItems, dummyOrders, dummyUser } from "../../dummyData";
 import MyPage from "../_PageSections/MyPage/MyPage";
 
