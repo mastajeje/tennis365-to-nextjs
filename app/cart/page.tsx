@@ -2,6 +2,7 @@
 import styles from './cart.module.scss'
 import { useState } from "react";
 import Button from "../../components/Button/Button";
+import CartDisplay from './_PageSections/CartDisplay';
 
 
 const dummyCartItems = [
@@ -77,13 +78,15 @@ export default function page(){
         ) : null}
         <ul className={styles["cart-items"]}>
           {!errorMessage && (
-            // <DisplayCart
+            <>
+            <CartDisplay
             //   errorMessage={errorMessage}
-            //   cartItems={cartItems}
-            //   handleQuantity={handleQuantity}
-            //   handleDelete={handleDelete}
-            // />
-            <div>Cart</div>
+              cartItems={dummyCartItems}
+              handleQuantity={()=>{}}
+              handleDelete={()=>{}}
+            />
+            {/* <div>Cart</div> */}
+            </>
           )}
         </ul>
         <div className={styles["cart_bottom"]}>
