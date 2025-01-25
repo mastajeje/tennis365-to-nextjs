@@ -1,5 +1,5 @@
 import { getBrandName } from "../../../lib/utils";
-
+import styles from "./CartDisplay.module.scss";
 //create dummy cartItems
 
 
@@ -15,23 +15,23 @@ export default function CartDisplay({ cartItems, handleQuantity, handleDelete })
         <>
           {cartItems.map((item) => {
             return (
-              <li className="cart_item" key={item.id}>
-                <div className="img-description">
-                  {/* <ProductImg item={item} class={"cart__img"} /> */}
+              <li className={styles["cart_item"]} key={item.id}>
+                <div className={styles["img-description"]}>
+                  <ProductImg item={item} class={"cart__img"} />
     
-                  <div className="cart__description">
-                    <strong className="item-name">{item.product_name}</strong>
+                  <div className={styles["cart__description"]}>
+                    <strong className={styles["item-name"]}>{item.product_name}</strong>
                     <span>{getBrandName(item.brand)}</span>
-                    {/* <div className="rating">
+                    <div className="rating">
                       <span>평점</span>
                       <span>{item.rating}</span>
-                    </div> */}
-                    <div className="item__price">
-                      <span className="info-title">판매가</span>
+                    </div>
+                    <div className={styles["item__price"]}>
+                      <span className={styles["info-title"]}>판매가</span>
                       <span>{`${item.price.toLocaleString()}원`}</span>
                     </div>
-                    <div className="item__quantity">
-                      <div className="info-title">수량</div>
+                    <div className={styles["item__quantity"]}>
+                      <div className={styles["info-title"]}>수량</div>
                       <input
                         min={1}
                         max={item.stock}
@@ -46,8 +46,8 @@ export default function CartDisplay({ cartItems, handleQuantity, handleDelete })
                         placeholder="수량"
                       />
                     </div>
-                    <div className="item__total">
-                      <span className="info-title">합계</span>
+                    <div className={styles["item__total"]}>
+                      <span className={styles["info-title"]}>합계</span>
                       <span id={item.id}>
                         {getTotal(item.quantity, item.price).toLocaleString(
                           "ko-KR",
@@ -56,12 +56,10 @@ export default function CartDisplay({ cartItems, handleQuantity, handleDelete })
                             currency: "KRW",
                           }
                         )}
-    
-                        {/* {item.quantity * parseInt(item.price)} */}
                       </span>
                     </div>
                     <div
-                      className="delete-btn"
+                      className={styles["delete-btn"]}
                       onClick={() =>
                         handleDelete(
                           "https://tennis365-api.herokuapp.com/cart/update",

@@ -1,10 +1,10 @@
-const ProductImg = (props) => {
+const ProductImg = ({className,imgURL, productName}) => {
   return (
-    <div className={props.class}>
+    <div className={className}>
       <img
-        src={props.item.imgUrl}
+        src={imgURL}
         // src={`https://tennis365-api.herokuapp.com/admin/${props.item.imgUrl}`}
-        alt={props.item.product_name}
+        alt={productName}
       />
     </div>
   );
