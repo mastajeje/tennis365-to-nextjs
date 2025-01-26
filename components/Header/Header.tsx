@@ -27,7 +27,7 @@ const Header = () => {
           <ul>
             <li className={styles["title"]}>
               <Link href="/">
-                <img src={"/nav-logo.jpg"} alt="logo" />
+                <img src={"/images/nav-logo.jpg"} alt="logo" />
                 <span>Tennis 365</span>
               </Link>
             </li>

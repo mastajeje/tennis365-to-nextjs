@@ -18,15 +18,15 @@ const product ={
 const productImgs = [
     {
       id: 1,
-      img_url: "/1.jpg",
+      img_url: "/images/1.jpg",
     },
     {
       id: 2,
-      img_url: "/2.jpg",
+      img_url: "/images/2.jpg",
     },
     {
       id: 4,
-      img_url: "/4.jpg",
+      img_url: "/images/4.jpg",
     },
   ];
 

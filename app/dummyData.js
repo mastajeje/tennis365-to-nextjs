@@ -5,7 +5,7 @@ export const dummyProducts = [
     price: 100,
     rating: '3',
     description: 'This is product 2',
-    imgUrl: '/1.jpg',
+    imgURL: '/images/1.jpg',
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const dummyProducts = [
     price: 200,
     rating: '4',
     description: 'This is product 2',
-    imgUrl: '/2.jpg',
+    imgURL: '/images/2.jpg',
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const dummyProducts = [
     price: 300,
     rating: '5',
     description: 'This is product 3',
-    imgUrl: '/4.jpg',
+    imgURL: '/images/4.jpg',
   },
 ];
 
@@ -130,3 +130,42 @@ export const dummyTransactionInfo = {
     user_id: 1,
     order_id: 1,
 }
+
+export const dummyCartItems = [
+    {
+      id: 1,
+      product_name: '테니스라켓',
+      brand: '1',
+      price: 50000,
+      quantity: 1,
+      stock: 10,
+      imgURL: '/images/1.jpg',
+    },
+    {
+      id: 2,
+      product_name: '테니스라켓',
+      brand: '2',
+      price: 100000,
+      quantity: 1,
+      stock: 10,
+      imgURL: '/images/2.jpg',
+    },
+    {
+      id: 3,
+      product_name: '테니스라켓',
+      brand: '3',
+      price: 150000,
+      quantity: 1,
+      stock: 10,
+      imgURL: '/images/4.jpg',
+    },
+    {
+      id: 4,
+      product_name: '테니스라켓',
+      brand: '4',
+      price: 200000,
+      quantity: 1,
+      stock: 10,
+      imgURL: '/images/2.jpg',
+    },
+  ];

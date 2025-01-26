@@ -14,7 +14,7 @@ export default function ProductDisplay({product}) {
         {/* <ProductImg product={product} class={"product__img"} /> */}
         <div className={styles['product__img']}>
           <img
-            src={product.imgUrl}
+            src={product.imgURL}
             // src={`https://tennis365-api.herokuapp.com/admin/${product.imgUrl}`}
             alt={product.product_name}
           />

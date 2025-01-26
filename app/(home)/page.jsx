@@ -36,13 +36,13 @@ export default function Home() {
           dynamicHeight={true}
         >
           <div>
-            <img src="/carousel-wilson.jpg" alt="" />
+            <img src="/images/carousel-wilson.jpg" alt="" />
           </div>
           <div>
-            <img src="/carousel-babolat.jpg" alt="" />
+            <img src="/images/carousel-babolat.jpg" alt="" />
           </div>
           <div>
-            <img src="/carousel-head.jpg" alt="" />
+            <img src="/images/carousel-head.jpg" alt="" />
           </div>
         </Carousel>
       }
@@ -84,27 +84,27 @@ export default function Home() {
       <ul className="brand-list">
         <div className="brand-list-row">
           <Link href="products/by-brand/babolat">
-            <img src="/라켓브랜드-바볼랏.png" alt="바볼랏" />
+            <img src="/images/라켓브랜드-바볼랏.png" alt="바볼랏" />
           </Link>
           <Link href="products/by-brand/wilson">
-            <img src="/라켓브랜드-윌슨.png" alt="윌슨" />
+            <img src="/images/라켓브랜드-윌슨.png" alt="윌슨" />
           </Link>
         </div>
 
         <div className="brand-list-row">
           <Link href="products/by-brand/head">
-            <img src="/라켓브랜드-헤드.png" alt="헤드" />
+            <img src="/images/라켓브랜드-헤드.png" alt="헤드" />
           </Link>
           <Link href="products/by-brand/yonex">
-            <img src="/라켓브랜드-요넥스.png" alt="요넥스" />
+            <img src="/images/라켓브랜드-요넥스.png" alt="요넥스" />
           </Link>
         </div>
         <div className="brand-list-row">
           <Link href="products/by-brand/dunlop">
-            <img src="/라켓브랜드-던롭.png" alt="던롭" />
+            <img src="/images/라켓브랜드-던롭.png" alt="던롭" />
           </Link>
           <Link href="products/by-brand/tecnifibre">
-            <img src="/라켓브랜드-테크니파이버.png" alt="테크니파이버" />
+            <img src="/images/라켓브랜드-테크니파이버.png" alt="테크니파이버" />
           </Link>
         </div>
       </ul>
