@@ -109,13 +109,13 @@ const Header = () => {
           </div>
         ) : null} */}
              <div className={styles["admin-menu"]}>
-            <div>
+            {/* <div>
               <Link href="/admin/post-item">
                 <span className={styles["header-link"]}>상품등록</span>
               </Link>
-            </div>
+            </div> */}
             <div>
-              <Link href="/admin/item-list">
+              <Link href="/admin/products">
                 <span className={styles["header-link"]}>상품목록</span>
               </Link>
             </div>
