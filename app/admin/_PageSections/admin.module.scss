@@ -1,0 +1,43 @@
+@import "../../../variables.scss";
+//Post Item Modal 
+.post-item__form {
+    // width: 100%;
+    width: 450px;
+    margin: 0 auto;
+    .item__specs {
+      display: flex;
+      flex-direction: column;
+      div {
+        display: flex;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        label {
+          width: 30%;
+        }
+      }
+    }
+    .item__description {
+      display: flex;
+      flex-direction: column;
+    }
+    textarea {
+      margin: 1rem 0;
+      width: 90%;
+    }
+    button {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      width: 90%;
+    }
+    .cover-img-input {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: $breakpoint-mobile) {
+    .post-item__form {
+      width: 300px;
+      // margin: 0 auto;
+    }
+  }
+  

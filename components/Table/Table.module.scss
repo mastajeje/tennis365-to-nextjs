@@ -1,0 +1,28 @@
+/* Table */
+.Table {
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.4rem;
+  text-align: center;
+  border-bottom: 2px solid var(--primary-gray);
+  border-collapse: collapse;
+
+  tr {
+    border-width: 0;
+    border-color: var(--primary-gray);
+  }
+
+  tr th {
+    padding: 12px;
+    border-top: 1px solid var(--primary-gray);
+  }
+
+  td {
+    padding: 12px;
+    border-top: 1px solid var(--primary-gray);
+  }
+
+  tbody tr:nth-child(odd) {
+    background: #f2f2f2;
+  }
+}

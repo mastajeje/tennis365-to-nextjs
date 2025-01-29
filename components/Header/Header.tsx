@@ -120,12 +120,12 @@ const Header = () => {
               </Link>
             </div>
             <div>
-              <Link href="/admin/user-list">
+              <Link href="/admin/users">
                 <span className={styles["header-link"]}>유저목록</span>
               </Link>
             </div>
             <div>
-              <Link href="/admin/manage-order">
+              <Link href="/admin/orders">
                 <span className={styles["header-link"]}>주문관리</span>
               </Link>
             </div>
