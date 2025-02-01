@@ -1,7 +1,7 @@
 // import { useContext } from "react";
 // import { AuthContext } from "../../Context";
 // import { Link, useHistory } from "react-router-dom";
-import NavBar from "../Navbar/NavBar";
+// import NavBar from "../Navbar/NavBar";
 import styles from "./Header.module.scss";
 // import Navbar from "../Navbar/Navbar";
 
