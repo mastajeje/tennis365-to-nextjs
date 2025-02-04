@@ -1,4 +1,4 @@
-
+'use client';
 import styles from './MessageBoard.module.scss'
 
 export default function MessageBoard({ messageList, historyUrl }){
