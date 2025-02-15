@@ -1,11 +1,13 @@
 'use client';
+import Link from 'next/link';
 import styles from './MessageBoard.module.scss'
 
-export default function MessageBoard({ messageList, historyUrl }){
+export default function MessageBoard({ messageList, targetUrl }){
     return (
         <ul className={styles["noticeboard__post-container"]}>
         {messageList.map((data) => (
           <li className={styles["noticeboard__post"]} key={data.id}>
+            <Link href={`${targetUrl}${data.id}`}>
             <h2
             //   onClick={() => history.push(`${historyUrl}${data.id}`)}
               className={styles["noticeboard__post--title"]}
@@ -19,6 +21,7 @@ export default function MessageBoard({ messageList, historyUrl }){
               </div>
               <span className={styles["info-head"]}>{` 작성일 ${data.createdAt}`}</span>
             </div>
+            </Link>
           </li>
         ))}
         {/* <Paginator

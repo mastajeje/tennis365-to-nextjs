@@ -11,7 +11,7 @@ export default function QnA(){
         <header>
           <h1>QnA</h1>
         </header>
-        <MessageBoard messageList={dummyPost} historyUrl={`/board/view-post/`} />
+        <MessageBoard messageList={dummyPost} targetUrl={`/board/qna/`} />
         <div className={styles["write-a-post-button"]}>
           <Button text={"글쓰기"} handleBtnClick={()=>{}} />
         </div>

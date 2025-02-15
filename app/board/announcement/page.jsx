@@ -30,7 +30,7 @@ const Announcement = () => {
         </header>
         <MessageBoard
           messageList={dummyPost}
-          historyUrl={`/board/view-post/`}
+          targetUrl={`/board/announcement/`}
         />
         <div className="write-a-post-button">
           <Button text={"글쓰기"} handleBtnClick={()=>{}} />
