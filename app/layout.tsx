@@ -3,12 +3,24 @@ import Footer from '../components/Footer/Footer';
 
 import Header from '../components/Header/Header';
 import NavBar from '../components/Navbar/NavBar';
+import { AuthContext } from '../lib/Context';
+import { useState } from 'react';
+
+
+
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+    const [authState, setAuthState] = useState({    
+        username: "",
+        id: 0,
+        isAdmin: 0,
+        status: false,
+      });
+
   return (
     <html lang="en">
       <head>
@@ -46,8 +58,10 @@ export default function RootLayout({
         <Header />
 
         <div id="root">
+        <AuthContext.Provider value={{authState, setAuthState}}>
           <NavBar />
           {children}
+          </AuthContext.Provider>
         </div>
         <Footer />
       </body>
